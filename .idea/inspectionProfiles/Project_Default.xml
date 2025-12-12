@@ -1,0 +1,104 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyInterpreterInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoredPackages">
+        <list>
+          <option value="accelerate" />
+          <option value="aenum" />
+          <option value="aiohappyeyeballs" />
+          <option value="aiohttp" />
+          <option value="aiosignal" />
+          <option value="annotated-types" />
+          <option value="antlr4-python3-runtime" />
+          <option value="anyio" />
+          <option value="attrs" />
+          <option value="bitsandbytes" />
+          <option value="certifi" />
+          <option value="charset-normalizer" />
+          <option value="click" />
+          <option value="colorama" />
+          <option value="contourpy" />
+          <option value="cycler" />
+          <option value="datasets" />
+          <option value="diffusers" />
+          <option value="dill" />
+          <option value="filelock" />
+          <option value="fonttools" />
+          <option value="frozenlist" />
+          <option value="fsspec" />
+          <option value="h11" />
+          <option value="hf-xet" />
+          <option value="httpcore" />
+          <option value="httpx" />
+          <option value="huggingface-hub" />
+          <option value="hydra-core" />
+          <option value="idna" />
+          <option value="importlib_metadata" />
+          <option value="jellyfish" />
+          <option value="Jinja2" />
+          <option value="joblib" />
+          <option value="kiwisolver" />
+          <option value="lightly" />
+          <option value="lightly-utils" />
+          <option value="lightning-utilities" />
+          <option value="loguru" />
+          <option value="MarkupSafe" />
+          <option value="matplotlib" />
+          <option value="mpmath" />
+          <option value="multidict" />
+          <option value="multiprocess" />
+          <option value="networkx" />
+          <option value="numpy" />
+          <option value="omegaconf" />
+          <option value="packaging" />
+          <option value="pandas" />
+          <option value="peft" />
+          <option value="pillow" />
+          <option value="propcache" />
+          <option value="psutil" />
+          <option value="pyarrow" />
+          <option value="pydantic" />
+          <option value="pydantic_core" />
+          <option value="pyparsing" />
+          <option value="python-dateutil" />
+          <option value="pytorch-lightning" />
+          <option value="pytz" />
+          <option value="PyYAML" />
+          <option value="regex" />
+          <option value="requests" />
+          <option value="safetensors" />
+          <option value="scikit-learn" />
+          <option value="scipy" />
+          <option value="segtok" />
+          <option value="setuptools" />
+          <option value="shellingham" />
+          <option value="six" />
+          <option value="sniffio" />
+          <option value="sympy" />
+          <option value="tabulate" />
+          <option value="threadpoolctl" />
+          <option value="timm" />
+          <option value="tokenizers" />
+          <option value="torch" />
+          <option value="torchaudio" />
+          <option value="torchmetrics" />
+          <option value="torchvision" />
+          <option value="tqdm" />
+          <option value="transformers" />
+          <option value="typer-slim" />
+          <option value="typing-inspection" />
+          <option value="typing_extensions" />
+          <option value="tzdata" />
+          <option value="urllib3" />
+          <option value="win32_setctime" />
+          <option value="xxhash" />
+          <option value="yake" />
+          <option value="yarl" />
+          <option value="zipp" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
