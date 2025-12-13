@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="grid-container">
+
+    <section class="card card">
+        <h2>Latency per Run</h2>
+        <p class="card-desc">
+            Scatter plot of total NL-to-intent latency per run, coloured by operation.
+        </p>
+        <img src="data:image/png;base64,{{ img_timeline }}" alt="Timeline of total latency">
+    </section>
+
+    <section class="card">
+        <h2>Latency Distribution by Operation</h2>
+        <p class="card-desc">
+            Boxplots of total latency per operation across all topologies.
+        </p>
+        <img src="data:image/png;base64,{{ img_box }}" alt="Boxplot total_ms per operation">
+    </section>
+
+    <section class="card">
+        <h2>Latency Breakdown</h2>
+        <p class="card-desc">
+            Median LLM planning, ONOS operations, and verification times per operation.
+        </p>
+        <img src="data:image/png;base64,{{ img_breakdown }}" alt="Latency breakdown per operation">
+    </section>
+
+    <section class="card">
+        <h2>Success Rate per Operation</h2>
+        <p class="card-desc">
+            Percentage of successful executions (planner + controller) for each operation.
+        </p>
+        <img src="data:image/png;base64,{{ img_success }}" alt="Success rate per operation">
+    </section>
+
+    <section class="card">
+        <h2>Scaling with Topology Size</h2>
+        <p class="card-desc">
+            Median total latency as a function of number of hosts in the topology, for each operation.
+        </p>
+        <img src="data:image/png;base64,{{ img_scaling }}" alt="Latency scaling with hosts_count">
+    </section>
+
+    <section class="card">
+        <h2>Error Types</h2>
+        <p class="card-desc">
+            Distribution of error types observed during the experiments (planner, ONOS/verification, others).
+        </p>
+        <img src="data:image/png;base64,{{ img_errors }}" alt="Error type distribution">
+    </section>
+
+</div>
+{% endblock %}

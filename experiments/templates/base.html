@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NL Intent Mediator – Experiments Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- auto-refresh every 10s -->
+    <meta http-equiv="refresh" content="10">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+    <div class="header-inner">
+        <div class="title-block">
+            <h1>NL-to-Intent Experiments Dashboard</h1>
+            <p>ONOS · Mininet · LLM-mediated intents</p>
+        </div>
+        <div class="summary-block">
+            {% if summary.total_rows > 0 %}
+            <div class="summary-item">
+                <span class="label">Total runs</span>
+                <span class="value">{{ summary.total_rows }}</span>
+            </div>
+            <div class="summary-item">
+                <span class="label">Overall success</span>
+                <span class="value">{{ '%.1f'|format(summary.overall_success) }}%</span>
+            </div>
+            <div class="summary-item">
+                <span class="label">Topologies</span>
+                <span class="value">
+                    {% for t in summary.topologies %}
+                        {{ t }}{% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                </span>
+            </div>
+            {% else %}
+            <div class="summary-item">
+                <span class="label">Status</span>
+                <span class="value">Waiting for CSV data…</span>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</header>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer>
+    <p>Experiments from: <code>logs/experiments_scaling.csv</code>. Refresh interval: 10 seconds.</p>
+</footer>
+</body>
+</html>
